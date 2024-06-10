@@ -1,0 +1,36 @@
+# test 配置信息读取
+test_config:
+  name: "config"
+  child_config:
+    name: "child_config2"
+
+# redis 配置信息
+redis:
+  REDIS_CODIS_BUSINESS_HOST:
+    addr: "127.0.0.1:6379"
+    password: "foobared"
+    db: 0
+
+# 腾讯sts
+wx_sts_config:
+  secret_id: "AKIDPNvTGLJKCZRmFp66CTIX7LAIiNiJqLOt"
+  secret_key: "8elLN8S5jmSJIMzVhHTK9HZSvK93r1c6"
+  bucket: "appwpt-10002380" # bucket  bucket-appId
+  region: "ap-shanghai" # bucket 所在地区
+
+  # 头条
+toutiao_config:
+  tuotiao_tmaid: "tt6e391884f113e094"  # 字节跳动分配的小程序id
+
+#微服务网关地址
+ms_gw_host: http://gateway-vpc.wptqc.com
+
+#钱币识别网关
+img_recognition_address: http://10.3.7.67:5050/classifyc/api/inference
+
+img_recognition:
+  surface_recognizer:
+    static_surface_recognizer:
+      front: ["顺治通宝","雍正通宝","乾隆通宝","嘉庆通宝","道光通宝","咸丰通宝","咸丰元宝","咸丰重宝","祺祥通宝","祺祥重宝","同治通宝","同治重宝","光绪通宝","光绪重宝","宣统通宝"]
+      producer: ["宝苏","宝泉","宝源","宝云","宝浙","宝昌","宝陕","宝迪","宝川","宝河","宝福","宝武","宝直","宝黔","宝桂","宝东","宝晋","宝广","宝巩","宝伊","宝南","宝漳","宝济","宝安","宝徳","宝台","宝蓟","宝新","宝吉","宝荆","宝库","宝沪","宝沽","宝宁","宝奉","宝洲","其他铸造局"]
+      coin_value: ["当五","当八","当十","当五十","当百", "无面值"]
